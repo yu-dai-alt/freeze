@@ -1,0 +1,11 @@
+<div class="contents row">
+  <div class="container">
+    <h3>編集する</h3>
+    <%= form_with(model: @item, local: true) do |f| %>
+      <%= f.text_field :title, placeholder: "Title" %>
+      <%= f.text_field :image, placeholder: "Image" %>
+      <%= f.text_area :text, placeholder: "Text" %>
+      <%= f.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
